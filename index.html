@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Calculator</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="calculator">
+   <div class="stdout">
+       <input id="stdout" type="text">
+   </div>
+   <div class="buttons">
+    <!--
+       <div class="first-row">
+           <button class="operator">^</button>
+           <button class="operator">-</button>
+           <button class="operator">%</button>
+           <button class="operator">=</button>
+       </div>
+    -->
+       <div id="row"> 
+           <button id="nine" class="number" onclick="getNum('9')">9</button>
+           <button id="num" class="number" onclick="getNum('8')">8</button>
+           <button id="num" class="number" onclick="getNum('7')">7</button>
+           <button class="operator" onclick="operation('/')">&#215;</button>
+       </div>
+       <div id="row">
+           <button id="num" class="number" onclick="getNum('6')">6</button>
+           <button id="num" class="number" onclick="getNum('5')">5</button>
+           <button id="num" class="number" onclick="getNum('4')">4</button>
+           <button class="operator" onclick="operation('*')">&#247;</button>
+       </div>
+       <div id="row">
+           <button id="num" class="number" onclick="getNum('3')">3</button>
+           <button id="num" class="number" onclick="getNum('2')">2</button>
+           <button id="num" class="number" onclick="getNum('1')">1</button>
+           <button class="operator" onclick="operation('+')">+</button>
+       </div>
+       <div id="row">
+           <button id="clear" class="clear" onclick="clear()" value="0">C</button>
+           <button id="num" class="number" onclick="getNum('0')">0</button>
+           <button class="operator" onclick="equ()">=</button>
+           <button class="operator" onclick="operation('-')">-</button>
+       </div>
+   </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
